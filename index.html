@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Pune City !</h1>
+        </header>
+        <section class="main">
+            <div class="column-left">
+                <form id="form-container">
+                    <label>SEARCH</label>
+                    <input class="searchbox" data-bind="textInput: query, event: {keyup: filterMarkers}" placeholder="Where do you want to go?">
+                </form>
+                <ul class="places" data-bind="foreach: visiblePlaces">
+                    <li data-bind="text: name, click: $parent.clickOnVisiblePlace" class="placelist"><a href="#"></a></li> 
+                </ul>
+            </div>
+            <div class="column-right">
+                <div id="map"> </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/lib/jQuery.js"></script>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/app.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyCNZ2UkPvp6sPMsa6ghLUXnoP7-a_A5ggg&v=3&callback=initMap" onerror="googleError()">
+    </script>
+</body>
+</html>

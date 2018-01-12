@@ -1,0 +1,94 @@
+﻿html,
+body {
+    height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+header {
+	text-align: center;
+    background-color: #7092BE;
+}
+
+header h1 {
+	font-size: 30px;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+}
+
+.column-left {
+	width: 25%;
+    height: 100%;
+	left: 0;
+	background:#dedede;
+	position: absolute;
+}
+.column-right {
+	width: 75%;
+	height: 100%;
+	right: 0;
+	position: absolute;
+}
+
+#form-container {
+    padding-top: 10px;
+}
+
+.searchbox {
+    width:250px;
+}
+
+.places {
+    height: 490px;
+    overflow: auto;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.placelist {
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 18px;
+    border: solid #b5b5b5;
+    border-radius: 8px; 
+    position:relative;
+    position:inherit;
+    transition: color .2s ease-out, background 0.5s ease-in;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
+.placelist:hover {
+    background-color: #757575;
+    cursor: pointer;
+    text-shadow: 0 0 15px #FFFFFF;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+
